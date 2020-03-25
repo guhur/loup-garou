@@ -14,6 +14,11 @@ Ce code reprend le jeu du loup garou pour la dernière séance de cours avec les
 
 Au cas où vous avez un trou de mémoire sur Sass, voici un [rappel de la syntaxe](https://devhints.io/sass).
 
+## Rappel
+
+- Les [contextes en React avec des classes](./context_class.md) 
+
+
 ## Material UI
 
 Je vous invite à regarder la vidéo de [Human Talks Paris](https://www.youtube.com/watch?v=D3tB_DGgICE).
