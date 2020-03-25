@@ -7,13 +7,13 @@ L'objectif de partager des données à une partie de l'application.
 Lorsque ces données changent, les composants qui se sont inscrits à ces données sont mis à jour. 
 
 On définit un contexte avec : 
-```
+```jsx
 const myContext = React.createContext(valeur_par_defaut);
 ```
 
 ensuite, on définit un `Provider` qui réagit au changement d'une donnée:
 
-```
+```jsx
 <myContext.Provider value={my_data}>
      { 
 // ici on place les composants qui ont besoin d'accéder à my_data
@@ -25,7 +25,7 @@ Le `Provider` doit donc être rechargé à chaque fois que `my_data` à changer.
 
 En utilisant des classes, le rechargement s'opère grâce à la fonction `setState` en plaçant le `Provider` dans une classe composant React :
 
-```
+```jsx
 class MyProvider extends React.Component {
   state = {
      counter: 0,
@@ -43,7 +43,7 @@ class MyProvider extends React.Component {
 
 De l'autre côté, pour qu'un enfant puisse accéder à `my_data`, on injecte `my_data` dans un HOC (higher order component) :
 
-```
+```jsx
 const Button = (props) => <button onClick={props.increment}>Incrémenter le compteur ({props.counter})
 </button>;
 const withCounter = Component => {
@@ -61,7 +61,7 @@ const ButtonWithCounter = withCounter(Button);
 
 Ainsi, si un enfant appelle la fonction `increment` , il appelle le `setState` de `MyProvider`, qui appelle `render`, lequel re-génère cet enfant. Il suffit donc de placer ButtonWithCounter comme un enfant de MyProvider: 
 
-```
+```jsx
 const App = () => <MyProvider><ButtonWithCounter /></MyProvider>;
 ```
 
