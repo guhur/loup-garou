@@ -81,7 +81,7 @@ Que se passe-t-il étape par étape ?
 
 On peut également remplacer la méthode `this.setState` du Provider avec la nouvelle Hooks API de React : 
 
-```
+```jsx
 const CounterProvider = (props) => {
   // 0 est la valeur par défaut du compteur
   // setCounter est équivalent à l'ancienne méthode `this.setState` :
