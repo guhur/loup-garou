@@ -56,7 +56,7 @@ const withCounter = Component => {
     }
     return NewComponent
 }
-const ButtonWithHoC = withCounter(Button);
+const ButtonWithCounter = withCounter(Button);
 ```
 
 Ainsi, si un enfant appelle la fonction `increment` , il appelle le `setState` de `MyProvider`, qui appelle `render`, lequel re-génère cet enfant. Il suffit donc de placer ButtonWithCounter comme un enfant de MyProvider: 
