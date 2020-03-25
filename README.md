@@ -58,8 +58,11 @@ Une contrainte importante est la synchronisation des joueurs : chaque joueur uti
 
 Une partie du code vous est fournie, afin de faciliter la mise en place de Firebase et des context providers. Il vous est demandé d'explorer le code, d'y apporter un design responsive, et de compléter l'application pour ajouter les différentes étapes de jeu.
 
-Copier .env dans .env.local et remplir de dernier à l'aide de ses identifiants Firebase.
-Activer l'authentification anonyme dans la console de Firebase.
+### Installation du projet
+
+Dans la [console de Firebase](https://console.firebase.google.com/), créer un nouveau projet. Dans le menu de gauche, cliquer sur "Authentication", puis cliquer sur l'onglet "Sign-in method", puis sélectionner "Anonymous" et activer le bouton "Enable". Ensuite, cliquer sur "Database" puis créer un "Cloud Firestore". Il est important de mettre la base de données en mode test. 
+
+Copier .env dans .env.local et remplir de dernier à l'aide de ses identifiants Firebase. Ses identifiants Firebase peuvent être récupérés dans la console, en cliquant sur l'engrenage des paramètres, puis sur l'icone web `</>`. Il faut copier le authDomain, l'apiKey et le projetId dans .env.local. Attention à ne pas mettre d'espace autour des `=` ou de `;`.
 
 ### Découverte du code
 
