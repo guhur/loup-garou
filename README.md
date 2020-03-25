@@ -16,7 +16,7 @@ Au cas où vous avez un trou de mémoire sur Sass, voici un [rappel de la syntax
 
 ## Rappel
 
-- Les [contextes en React avec des classes](./context_class.md) 
+- Les [contextes en React avec des classes](./context_react.md) 
 
 
 ## Material UI
